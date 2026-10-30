@@ -1,0 +1,370 @@
+.hero-section {
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  margin: 20px 0;
+}
+
+.highlight-text {
+  color: var(--brand-green);
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-image-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.stats-section {
+  padding: 40px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: var(--brand-green);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   CARRUSEL DE ALIADOS & LOGOS SVG
+   ========================================================================== */
+.partners-section {
+  padding: 60px 0;
+}
+
+.partners-subtitle {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.partners-slider {
+  padding-bottom: 40px;
+}
+
+.partners-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para los Logos SVG Nativos */
+.partner-logo-svg {
+  width: auto;
+  height: 40px;
+  max-width: 160px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.partner-logo-svg:hover {
+  opacity: 1;
+}
+
+/* Adaptación de colores internos del SVG según el tema */
+.partner-logo-svg .svg-theme-adapt {
+  fill: #0F172A; /* Color oscuro para Modo Claro */
+  transition: fill 0.3s ease;
+}
+
+[data-theme="dark"] .partner-logo-svg .svg-theme-adapt {
+  fill: #FFFFFF; /* Color blanco para Modo Oscuro */
+}
+
+.partner-logo-svg .svg-brand-color {
+  fill: var(--brand-green);
+}
+
+/* Adaptación de color para el texto del SVG en Modo Oscuro */
+.svg-text-adapt {
+  fill: #07153F; /* Color original para el Modo Claro */
+  transition: fill 0.3s ease;
+}
+
+[data-theme="dark"] .svg-text-adapt {
+  fill: #FFFFFF !important; /* Pasa a blanco puro en el Modo Oscuro */
+}
+
+/* Paginación de Swiper (Contraste Corregido Claro/Oscuro) */
+.partners-slider .swiper-pagination-bullet {
+  background-color: var(--text-secondary);
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.partners-slider .swiper-pagination-bullet-active {
+  background-color: var(--brand-green) !important;
+  opacity: 1;
+  width: 24px;
+  border-radius: 5px;
+}
+
+[data-theme="dark"] .partners-slider .swiper-pagination-bullet {
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+[data-theme="dark"] .partners-slider .swiper-pagination-bullet-active {
+  background-color: var(--brand-green) !important;
+  opacity: 1;
+  box-shadow: 0 0 10px var(--brand-green-glow);
+}
+
+/* ==========================================================================
+   PRODUCTOS & CARDS INDUSTRIALES
+   ========================================================================== */
+.products-summary-section {
+  padding: 60px 0;
+  background: var(--bg-secondary);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  color: var(--text-secondary);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.card-industrial {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--theme-transition);
+}
+
+.card-industrial::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.card-industrial:hover {
+  border-color: var(--brand-green);
+  transform: translateY(-4px);
+}
+
+.card-industrial:hover::before {
+  background: var(--brand-green);
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  color: var(--brand-green);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.card-description {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.card-link {
+  color: var(--brand-green);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.2s ease;
+}
+
+.card-link:hover {
+  gap: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--brand-green-glow);
+  color: var(--brand-green);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--brand-green);
+  font-family: var(--font-heading);
+}
+
+.footer-logo {
+  height: 38px;
+}
+
+.footer-contact-list {
+  list-style: none;
+}
+
+.footer-contact-list li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  color: var(--brand-green);
+  margin-right: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+  color: var(--brand-green);
+}
+
+.entity-note {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN PARA COMPONENTES
+   ========================================================================== */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    justify-content: flex-start;
+  }
+
+  .card-industrial {
+    padding: 24px;
+  }
+}
