@@ -1,0 +1,196 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS - PÁGINA NOSOTROS (nosotros.css)
+   ========================================== */
+
+/* HEADER DE LA PÁGINA (PAGE BANNER) */
+.page-header {
+  padding: 80px 0 50px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 60px;
+  transition: var(--theme-transition);
+}
+
+.page-title {
+  font-size: 2.8rem;
+  margin: 15px 0 20px;
+  color: var(--text-primary);
+}
+
+.page-title .highlight-text {
+  color: var(--brand-green);
+}
+
+.page-description {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* SECCIÓN SOBRE NOSOTROS (OVERVIEW) */
+.about-overview-section {
+  padding: 40px 0 80px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-content .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.about-text {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.98rem;
+}
+
+.highlight-icon {
+  color: var(--brand-green);
+  font-size: 1.2rem;
+}
+
+.about-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+  background: var(--bg-card);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-image:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* MISIÓN Y VISIÓN (MV SECTION) */
+.mv-section {
+  padding: 60px 0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--theme-transition);
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mv-card {
+  background: var(--bg-primary) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px !important;
+}
+
+/* VALORES CORPORATIVOS */
+.values-section {
+  padding: 80px 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.value-card {
+  text-align: left;
+  padding: 30px 24px !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.value-icon {
+  font-size: 2.2rem;
+  color: var(--brand-green);
+  margin-bottom: 20px;
+}
+
+.value-title {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+}
+
+.value-description {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE DESIGN PARA NOSOTROS */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .about-grid,
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-header {
+    padding: 60px 0 40px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+}

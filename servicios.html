@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Servicios | PETROSAN - Distribución de Diésel</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos Locales Modularizados -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/servicios.css">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo-petrosan.webp" alt="PETROSAN Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="servicios.html" class="nav-link active">Productos & Servicios</a>
+                <a href="cobertura.html" class="nav-link">Cobertura</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Switch Modo Claro / Oscuro -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                </button>
+                <a href="contacto.html" class="btn btn-primary nav-cta">COTIZAR AHORA <i
+                        class="fa-solid fa-arrow-right"></i></a>
+
+                <!-- Botón Menú Móvil (Hamburguesa) -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars icon-bars"></i>
+                    <i class="fa-solid fa-xmark icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-gas-pump"></i> Soluciones Energéticas</span>
+                <h1 class="page-title">Nuestros <span class="highlight-text">Productos y Servicios</span></h1>
+                <p class="page-description">Combustibles de alto rendimiento y distribución logística especializada para mantener tu maquinaria y operaciones en marcha.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PRODUCTOS PRINCIPALES -->
+        <section class="products-detailed-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portafolio de Combustibles</h2>
+                    <p class="section-description">Cumplimos estrictamente con los estándares de calidad y normativas vigentes de OSINERGMIN.</p>
+                </div>
+
+                <div class="products-detailed-grid">
+                    <!-- Producto 1 -->
+                    <div class="card-industrial product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-oil-can card-icon"></i>
+                        </div>
+                        <div class="product-content">
+                            <span class="product-badge">Bajo Azufre</span>
+                            <h3 class="card-title">Diésel Premium DB5-S50</h3>
+                            <p class="card-description">
+                                Combustible diésel de ultra bajo contenido de azufre (máximo 50 ppm). Diseñado especialmente para motores modernos de última generación con tecnología Euro IV y V, reduciendo emisiones y maximizando la vida útil de los inyectores.
+                            </p>
+                            <ul class="product-specs-list">
+                                <li><i class="fa-solid fa-check"></i> Menor emisión de partículas</li>
+                                <li><i class="fa-solid fa-check"></i> Mayor rendimiento por galón</li>
+                                <li><i class="fa-solid fa-check"></i> Protección superior contra la corrosión</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="contacto.html" class="btn btn-primary">COTIZAR ESTE PRODUCTO <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="card-industrial product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-industry card-icon"></i>
+                        </div>
+                        <div class="product-content">
+                            <span class="product-badge">Alto Desempeño</span>
+                            <h3 class="card-title">Diésel Industrial</h3>
+                            <p class="card-description">
+                                Solución energética robusta formulada para satisfacer las demandas energéticas más pesadas de calderos, hornos, maquinaria pesada fuera de ruta y flotas de transporte intensivo.
+                            </p>
+                            <ul class="product-specs-list">
+                                <li><i class="fa-solid fa-check"></i> Estabilidad térmica optimizada</li>
+                                <li><i class="fa-solid fa-check"></i> Potencia constante en operaciones continuas</li>
+                                <li><i class="fa-solid fa-check"></i> Ideal para grandes volúmenes de consumo</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="contacto.html" class="btn btn-primary">COTIZAR ESTE PRODUCTO <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE SERVICIOS LOGÍSTICOS -->
+        <section class="logistics-services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Servicios de Distribución Especializada</h2>
+                    <p class="section-description">Llevamos el combustible de manera segura y directa a donde tu operación lo necesite.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="card-industrial service-card">
+                        <i class="fa-solid fa-truck-fast service-icon"></i>
+                        <h4 class="service-title">Abastecimiento en Planta y Ruta</h4>
+                        <p class="service-description">Despachos programados directamente a tus instalaciones, almacenes o unidades en operación a nivel nacional.</p>
+                    </div>
+                    <div class="card-industrial service-card">
+                        <i class="fa-solid fa-shield-halved service-icon"></i>
+                        <h4 class="service-title">Seguridad y Trazabilidad</h4>
+                        <p class="service-description">Unidades equipadas con sistemas de monitoreo y protocolos rigurosos avalados por la normativa vigente.</p>
+                    </div>
+                    <div class="card-industrial service-card">
+                        <i class="fa-solid fa-headset service-icon"></i>
+                        <h4 class="service-title">Asesoría Comercial Personalizada</h4>
+                        <p class="service-description">Atención directa con ejecutivos especializados para optimizar costos y volúmenes de consumo en tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo-petrosan.webp" alt="PETROSAN Logo" class="footer-logo">
+                    <p class="footer-text">En PETROSAN, distribuimos combustible diésel de alta calidad a nivel
+                        nacional, garantizando seguridad, eficiencia y confianza en cada entrega.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="cobertura.html">Cobertura</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-phone contact-icon"></i> +51 940 740 441</li>
+                        <li><i class="fa-solid fa-envelope contact-icon"></i> ventas@petrosanperu.com</li>
+                        <li><i class="fa-solid fa-location-dot contact-icon"></i> Av. Mártir Olaya Mza. J Lote. 10,
+                            Punta Hermosa, Lima</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p class="entity-note">Organismo Supervisor de la Inversión en Energía y Minería (OSINERGMIN)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 PETROSAN. Todos los derechos reservados.</span>
+                <span>Desarrollado por Sergio Shatare</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Locales -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

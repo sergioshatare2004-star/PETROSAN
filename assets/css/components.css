@@ -1,0 +1,166 @@
+/* ==========================================================================
+   COMPONENTES REUTILIZABLES (Botones, Cards Genéricas, Badges)
+   ========================================================================== */
+
+.btn {
+  padding: 12px 24px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--brand-green);
+  color: #FFFFFF;
+}
+
+.btn-outline {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--brand-green-glow);
+  color: var(--brand-green);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--brand-green);
+  font-family: var(--font-heading);
+}
+
+/* Tarjetas Industriales Reutilizables */
+.card-industrial {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--theme-transition);
+}
+
+.card-industrial::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  color: var(--brand-green);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.card-description {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.card-link {
+  color: var(--brand-green);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.2s ease;
+}
+
+/* Elementos del Footer que tenías en componentes */
+.footer-logo {
+  height: 38px;
+}
+
+.footer-contact-list {
+  list-style: none;
+}
+
+.footer-contact-list li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  color: var(--brand-green);
+  margin-right: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.entity-note {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/*HOVER SOLO PARA CURSORES*/
+
+/* Hover solo para dispositivos con mouse o cursor preciso */
+@media (hover: hover) and (pointer: fine) {
+
+  .btn-primary:hover {
+    background-color: var(--brand-green-hover);
+    box-shadow: 0 0 20px var(--brand-green-glow);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline:hover {
+    border-color: var(--brand-green);
+    color: var(--brand-green);
+    transform: translateY(-2px);
+  }
+
+  .card-industrial:hover {
+    border-color: var(--brand-green);
+    transform: translateY(-4px);
+  }
+
+  .card-industrial:hover::before {
+    background: var(--brand-green);
+  }
+
+  .card-link:hover {
+    gap: 12px;
+  }
+
+  .social-icon:hover {
+    color: var(--brand-green);
+  }
+
+}

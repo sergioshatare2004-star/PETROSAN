@@ -1,0 +1,32 @@
+:root {
+  --font-heading: 'Chakra Petch', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  --brand-green: #00A859;
+  --brand-green-hover: #008F4C;
+  --brand-green-glow: rgba(0, 168, 89, 0.2);
+
+  --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+  --bg-primary: #0F1115;
+  --bg-secondary: #16191E;
+  --bg-card: #1C2026;
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-accent: var(--brand-green);
+  --nav-bg: rgba(15, 17, 21, 0.88);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #EDF2F7;
+  --bg-card: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-accent: var(--brand-green);
+  --nav-bg: rgba(248, 250, 252, 0.88);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,144 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS - PÁGINA COBERTURA (cobertura.css)
+   ========================================== */
+
+/* HEADER DE PÁGINA */
+.page-header {
+  padding: 80px 0 50px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 60px;
+  transition: var(--theme-transition);
+}
+
+.page-title {
+  font-size: 2.8rem;
+  margin: 15px 0 20px;
+  color: var(--text-primary);
+}
+
+.page-title .highlight-text {
+  color: var(--brand-green);
+}
+
+.page-description {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* SECCIÓN DE COBERTURA */
+.coverage-section {
+  padding: 20px 0 60px;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.coverage-card {
+  background: var(--bg-card) !important;
+  padding: 40px 30px !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.coverage-icon {
+  font-size: 2.5rem;
+  color: var(--brand-green);
+  margin-bottom: 20px;
+}
+
+.coverage-list {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coverage-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.coverage-list li i {
+  color: var(--brand-green);
+  font-size: 0.8rem;
+}
+
+/* SECCIÓN CTA COBERTURA */
+.coverage-cta-section {
+  padding: 60px 0 80px;
+}
+
+.coverage-cta-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-shadow: var(--shadow-card);
+  transition: var(--theme-transition);
+}
+
+.coverage-cta-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.coverage-cta-card p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* RESPONSIVE DESIGN PARA COBERTURA */
+@media (max-width: 1024px) {
+  .coverage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .coverage-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .coverage-cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-header {
+    padding: 60px 0 40px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .coverage-card {
+    padding: 30px 20px !important;
+  }
+}

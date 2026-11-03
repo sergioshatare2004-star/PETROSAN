@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | PETROSAN - Solicita tu Cotización de Combustible</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos Locales Modularizados -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/contacto.css">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo-petrosan.webp" alt="PETROSAN Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="servicios.html" class="nav-link">Productos & Servicios</a>
+                <a href="cobertura.html" class="nav-link">Cobertura</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Switch Modo Claro / Oscuro -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                </button>
+                <a href="contacto.html" class="btn btn-primary nav-cta">COTIZAR AHORA <i
+                        class="fa-solid fa-arrow-right"></i></a>
+
+                <!-- Botón Menú Móvil (Hamburguesa) -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars icon-bars"></i>
+                    <i class="fa-solid fa-xmark icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-headset"></i> Atención Inmediata</span>
+                <h1 class="page-title">Ponte en <span class="highlight-text">Contacto</span></h1>
+                <p class="page-description">Solicita tu cotización de diésel o comunícate con nuestros asesores comerciales para atención a nivel nacional.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO & FORMULARIO -->
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <!-- Información de Contacto -->
+                <div class="contact-info-col">
+                    <h2 class="section-title">Canales Oficiales</h2>
+                    <p class="contact-subtitle">Estamos listos para atender tus requerimientos logísticos y comerciales con la rapidez que tu empresa necesita.</p>
+
+                    <div class="contact-cards-list">
+                        <div class="card-industrial contact-item-card">
+                            <i class="fa-solid fa-phone contact-card-icon"></i>
+                            <div>
+                                <h4>Teléfono / WhatsApp</h4>
+                                <p>+51 940 740 441</p>
+                            </div>
+                        </div>
+
+                        <div class="card-industrial contact-item-card">
+                            <i class="fa-solid fa-envelope contact-card-icon"></i>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <p>ventas@petrosanperu.com</p>
+                            </div>
+                        </div>
+
+                        <div class="card-industrial contact-item-card">
+                            <i class="fa-solid fa-location-dot contact-card-icon"></i>
+                            <div>
+                                <h4>Oficina Principal</h4>
+                                <p>Av. Mártir Olaya Mza. J Lote. 10, Punta Hermosa, Lima</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MAPA DE GOOGLE MAPS -->
+                    <!-- MAPA DE GOOGLE MAPS -->
+<div class="map-wrapper card-industrial">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59345.12473437111!2d-77.050164!3d-12.033524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf28d402f745%3A0x395fbf5093322ce9!2sJr.%20M%C3%A1rtir%20Olaya%2C%20San%20Mart%C3%ADn%20de%20Porres%2015102!5e1!3m2!1ses!2spe!4v1793676949431!5m2!1ses!2spe" 
+        width="100%" 
+        height="260" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Ubicación Petrosan">
+    </iframe>
+</div>
+                </div>
+
+                <!-- Formulario de Cotización -->
+                <div class="card-industrial contact-form-col">
+                    <h3 class="form-title">Solicita una Cotización</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre o Razón Social</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Empresa Constructora S.A.C." required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono / Celular</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+51 900 000 000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="correo@empresa.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="producto">Producto de Interés</label>
+                            <select id="producto" name="producto" required>
+                                <option value="" disabled selected>Selecciona un combustible</option>
+                                <option value="diesel-db5">Diésel Premium DB5-S50</option>
+                                <option value="diesel-industrial">Diésel Industrial</option>
+                                <option value="otro">Otro requerimiento / Asesoría</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Detalles del Requerimiento (Volumen estimado, zona de entrega)</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indícanos cantidad aproximada de galones y lugar de destino..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            ENVIAR SOLICITUD <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo-petrosan.webp" alt="PETROSAN Logo" class="footer-logo">
+                    <p class="footer-text">En PETROSAN, distribuimos combustible diésel de alta calidad a nivel
+                        nacional, garantizando seguridad, eficiencia y confianza en cada entrega.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="cobertura.html">Cobertura</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-phone contact-icon"></i> +51 940 740 441</li>
+                        <li><i class="fa-solid fa-envelope contact-icon"></i> ventas@petrosanperu.com</li>
+                        <li><i class="fa-solid fa-location-dot contact-icon"></i> Av. Mártir Olaya Mza. J Lote. 10,
+                            Punta Hermosa, Lima</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p class="entity-note">Organismo Supervisor de la Inversión en Energía y Minería (OSINERGMIN)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 PETROSAN. Todos los derechos reservados.</span>
+                <span>Desarrollado por Sergio Shatare</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Locales -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
